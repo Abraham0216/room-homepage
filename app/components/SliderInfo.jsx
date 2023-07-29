@@ -3,7 +3,7 @@ import React from 'react';
 import {Swiper, SwiperSlide }from 'swiper/react';
 import 'swiper/css'
 import 'swiper/css/pagination'
-import { Navigation }from 'swiper/modules';
+import { Navigation, Keyboard, Autoplay }from 'swiper/modules';
 import Image from 'next/image';
 import NavButtons from './NavButtons';
 
@@ -38,7 +38,7 @@ const SliderInfo = () => {
     return (
         <div className='w-full relative'>
         
-        <Swiper modules={[Navigation]} slidesPerView={1} loop={true}>
+        <Swiper modules={[Navigation, Keyboard, Autoplay]} slidesPerView={1} loop={true}  keyboard autoplay={{ delay: 15000, disableOnInteraction: false }}>
       {slides.map((slide, index) => (
         <SwiperSlide key={index}>
         <div className='xl:flex flex-row xl:w-full'>
