@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Navigation from './components/navigation'
+import Navigation from './components/Navigation'
 import SliderInfo from './components/SliderInfo'
 
 export default function Home() {

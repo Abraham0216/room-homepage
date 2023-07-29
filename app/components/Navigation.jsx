@@ -13,18 +13,18 @@ const [isOpen, setIsOpen] = useState(false);
             {!isOpen ? <img src="/images/icon-hamburger.svg" alt="Hamburger Icon" /> : <img src="/images/icon-close.svg" alt="Close Icon" />}
           </button>
         <nav className={`${isOpen ? "translate-x-0 z-20 opacity-100" : "-translate-x-full xl:translate-x-0 xl:bg-transparent "} fixed top-0 right-0 bg-white w-full z-10 p-4 h-24 px-4 gap-7 flex items-center justify-end xl:justify-start transition-transform duration-500 ease-in-out`}>
-          <ul className="w-10/12 xl:w-72 xl:ml-24 flex flex-row  items-center justify-around">
+          <ul className="w-10/12 xl:w-72 xl:ml-24 my-auto flex flex-row  items-center justify-around">
             <li className="font-bold xl:text-white cursor-pointer group">home
-            <span className='w-3 mt-0.5 mx-auto h-0.5 group-hover:bg-white flex z-50 '></span>
+            <span className='w-3 xl:mt-0.5 mx-auto xl:h-0.5 group-hover:bg-white flex z-50 '></span>
             </li>
-            <li className="font-bold xl:text-white cursor-pointer group">shop
-            <span className='w-3 mt-0.5 mx-auto h-0.5 group-hover:bg-white flex z-50 '></span>
+            <li className="font-bold xl:text-white my-auto cursor-pointer group">shop
+            <span className='w-3 xl:mt-0.5 mx-auto xl:h-0.5 group-hover:bg-white flex z-50 '></span>
             </li>
-            <li className="font-bold xl:text-white cursor-pointer group">about
-            <span className='w-3 mt-0.5 mx-auto h-0.5 group-hover:bg-white flex z-50 '></span>
+            <li className="font-bold xl:text-white my-auto cursor-pointer group">about
+            <span className='w-3 xl:mt-0.5 mx-auto xl:h-0.5 group-hover:bg-white flex z-50 '></span>
             </li>
-            <li className="font-bold xl:text-white cursor-pointer group">contact
-            <span className='w-3 mt-0.5 mx-auto h-0.5 group-hover:bg-white flex z-50 '></span>
+            <li className="font-bold xl:text-white my-auto cursor-pointer group">contact
+            <span className='w-3 xl:mt-0.5 mx-auto xl:h-0.5 group-hover:bg-white flex z-50 '></span>
             </li>
           </ul>
         </nav>
