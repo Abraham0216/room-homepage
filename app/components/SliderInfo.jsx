@@ -36,13 +36,13 @@ const SliderInfo = () => {
       ];
 
     return (
-        <div className='w-full relative'>
+        <div className='w-full xl:h-full relative'>
         
         <Swiper modules={[Navigation, Keyboard, Autoplay]} slidesPerView={1} loop={true}  keyboard autoplay={{ delay: 15000, disableOnInteraction: false }}>
       {slides.map((slide, index) => (
         <SwiperSlide key={index}>
-        <div className='xl:flex flex-row xl:w-full'>
-          <div className='relative w-full'>
+        <div className='xl:flex flex-row xl:w-full xl:h-[68vh]'>
+          <div className='relative w-full xl:h-full'>
             <Image
               src={slide.image[0]}
               srcset={`${slide.image[1]} 1280w`}
@@ -50,7 +50,7 @@ const SliderInfo = () => {
               width={0}
               height={0}
               sizes='100vw'
-              className='w-full'
+              className='w-full h-full'
             />
             <NavButtons />
           </div>

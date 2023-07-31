@@ -4,11 +4,11 @@ import SliderInfo from './components/SliderInfo'
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center  ">
+    <div className="flex min-h-screen  flex-col items-center  ">
 
 
 
-      <div className='w-full relative '>
+      <div className='w-full xl:h-[68vh] relative '>
     <Navigation />
       <img className=' absolute xl:fixed z-10 top-[39px] xl:left-16 left-1/2 -translate-x-1/2' src='/images/logo.svg' />
         
@@ -19,7 +19,7 @@ export default function Home() {
 
   
 </div>
-<div className='xl:flex flex-row xl:w-full'>
+<div className='xl:flex flex-row xl:w-full xl:h-[32vh]'>
   <Image 
       src='/images/image-about-dark.jpg'
       alt='room-dark'
